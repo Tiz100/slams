@@ -1,0 +1,41 @@
+
+<ion-view view-title="">
+    <ion-content>
+
+     
+           
+            <!--
+            | http://stackoverflow.com/questions/27239735/ionic-framwork-gridlayout-with-multiple-rows-and-column-on-which-buttons-placed
+            | http://stackoverflow.com/questions/23779773/angularjs-loops-and-formatting/23780288#23780288
+            -->
+       <div class="card list">
+            <div class="item item-divider"> Booyah Slams
+            </div>
+          <div class="item item-text-wrap">
+                     
+            <button class="button button-full button-large button-positive item-icon-left ion-chatbox" ui-sref="chat-rooms">
+            Chat  </button>
+             <button class="button button-full button-large button-positive item-icon-left ion-thumbsup" ui-sref="sendaslam">
+            Celebrity Slam
+                </button>
+                <button class="button button-full button-large button-positive item-icon-left ion-android-people" ui-sref="walls">
+             Slamming Walls
+                </button>
+                <button class="button button-full button-large button-positive item-icon-left ion-information" ui-sref="aboutus">
+             About Us
+                </button>
+        </div>
+    <div class="item item-divider">
+                <a ng-click="vm.openFacebookPage()" class="item item-icon-left">
+                    <i class="icon ion-social-facebook"></i>
+                    Visit us on Facebook
+                </a>
+                <a ng-click="vm.rateThisAppNow()" class="item item-icon-left">
+                    <i class="icon ion-ios-star"></i>
+                    Rate this App
+                </a>
+        </div>
+             
+            </div>
+</ion-content>
+</ion-view>
