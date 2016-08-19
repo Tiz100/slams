@@ -19,12 +19,12 @@
 		
 
 		
-	//	function openFacebookPage() {
-	//		externalAppsService.openExternalUrl(homeDataService.facebookPage);
-	//	}
+		function openFacebookPage() {
+			externalAppsService.openExternalUrl(homeDataService.facebookPage);
+		}
 
-	//	function rateThisAppNow(){
-	//		$cordovaAppRate.promptForRating(true);
-	//	}
-	//}
+		function rateThisAppNow(){
+			$cordovaAppRate.promptForRating(true);
+		}
+	}
 })();

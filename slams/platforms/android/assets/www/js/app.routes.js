@@ -1,0 +1,41 @@
+/*
+angular
+  .module('webclient')
+  .config(function ($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: 'js/views/chat.html'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  })
+*/
+  (function () {
+    'use strict';
+
+    angular.module('webclient').config(['$routeProvider', function ($routeProvider) {
+
+        var routes = [
+        {
+            url: '/',
+            config: {
+                templateUrl: "js/views/chat.html",
+            }
+        },
+        {
+            url: '/menu',
+            config: {
+                templateUrl: "js/views/mainmenu.html",
+            }
+        },
+        ];
+        
+        routes.forEach(function (route) {
+            $routeProvider.when(route.url, route.config);
+        });
+
+        $routeProvider.otherwise({ redirectTo: '/' });
+
+    }]);
+}());

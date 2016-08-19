@@ -1,17 +1,17 @@
-(function() {
-	'use strict';
+//(function() {
+//	'use strict';
 
-	angular
-		.module('starter.home')
-		.factory('homeDataService', homeDataService);
+//	angular
+//		.module('starter.home')
+//		.factory('homeDataService', homeDataService);
 
-	homeDataService.$inject = [];
+//	homeDataService.$inject = [];
 
-	/* @ngInject */
-	function homeDataService() {
-		return {
-			email: 'skounis@gmail.com',
-			facebookPage: 'https://www.facebook.com/ionicframework'
-		};
-	}
-})();
+//	/* @ngInject */
+//	function homeDataService() {
+//		return {
+//			email: 'skounis@gmail.com',
+//			facebookPage: 'https://www.facebook.com/ionicframework'
+//		};
+//	}
+//})();

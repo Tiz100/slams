@@ -41,6 +41,5 @@ angular.module('starter.controllers', ['ionic'])
         }, 1000);
     };
 })
-
-
 ;
+
