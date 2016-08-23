@@ -3,7 +3,7 @@
 
     PubNubController.$inject = [];
 
-    angular.module('webclient.menu.chat').controller('PubNubController', PubNubController);
+    angular.module('starter.menu.chat').controller('PubNubController', PubNubController);
 
     function PubNubController() {
 

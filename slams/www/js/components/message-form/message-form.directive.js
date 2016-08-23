@@ -1,4 +1,4 @@
-angular.module('webclient').directive('messageForm', function() {
+angular.module('starter').directive('messageForm', function() {
   return {
     restrict: "E",
     replace: true,

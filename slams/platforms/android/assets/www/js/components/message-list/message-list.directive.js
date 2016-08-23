@@ -1,4 +1,4 @@
-angular.module('webclient').directive('messageList', function ($rootScope, $anchorScroll, MessageService, ngNotify) {
+angular.module('starter').directive('messageList', function ($rootScope, $anchorScroll, MessageService, ngNotify) {
   return {
     restrict: "E",
     replace: true,

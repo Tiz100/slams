@@ -1,6 +1,6 @@
 ﻿(function () {
     "use strict";
 
-    angular.module('webclient', []);
-    //angular.module('webclient.menu.chat', []);
+    angular.module('starter', []);
+    //angular.module('starter.menu.chat', []);
 })();

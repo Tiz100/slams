@@ -1,6 +1,6 @@
 /*
 angular
-  .module('webclient')
+  .module('starter')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -14,7 +14,7 @@ angular
   (function () {
     'use strict';
 
-    angular.module('webclient').config(['$routeProvider', function ($routeProvider) {
+    angular.module('starter').config(['$routeProvider', function ($routeProvider) {
 
         var routes = [
         {

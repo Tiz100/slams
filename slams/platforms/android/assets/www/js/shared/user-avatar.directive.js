@@ -1,4 +1,4 @@
-angular.module('webclient').directive('userAvatar', function () {
+angular.module('starter').directive('userAvatar', function () {
   return {
     restrict: "E",
     template: '<img src="{{avatarUrl}}" alt="{{uuid}}" class="circle">',

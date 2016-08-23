@@ -1,4 +1,4 @@
-angular.module('webclient').directive('messageItem', function (MessageService) {
+angular.module('starter').directive('messageItem', function (MessageService) {
   return {
     restrict: "E",
     templateUrl: 'js/components/message-item/message-item.html',

@@ -2,7 +2,7 @@
 
     PubNubFactory.$inject = [];
 
-    angular.module('webclient').factory('PubNubFactory', PubNubFactory);
+    angular.module('starter').factory('PubNubFactory', PubNubFactory);
 
     function PubNubFactory() {
         var PubNubFactory = function (keys) {

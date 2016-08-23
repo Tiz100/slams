@@ -17,7 +17,7 @@
        under the License.
  */
 
-package io.cordova.myappa61586;
+package 223a15dd;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

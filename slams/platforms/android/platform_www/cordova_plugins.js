@@ -28,6 +28,33 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
+        "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+        "id": "cordova-sqlite-storage.SQLitePlugin",
+        "clobbers": [
+            "SQLitePlugin"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-ms-azure-mobile-apps/www/MobileServices.Cordova.Ext.js",
+        "id": "cordova-plugin-ms-azure-mobile-apps.AzureMobileServices.Ext",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-ms-azure-mobile-apps/www/MobileServices.Cordova.js",
+        "id": "cordova-plugin-ms-azure-mobile-apps.AzureMobileServices",
+        "clobbers": [
+            "WindowsAzure"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -38,7 +65,10 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "cordova-plugin-inappbrowser": "1.4.0",
+    "cordova-sqlite-storage": "1.4.6",
+    "cordova-plugin-ms-azure-mobile-apps": "2.0.0-rc1"
 };
 // BOTTOM OF METADATA
 });
