@@ -61,10 +61,20 @@
 
             <!--Fight song play button-->
 
-            <div class="Play-fightsong">
-                <button class="button button-block button-positive button-large-font-size">
+            <!--<div class="Play-fightsong">
+                <button class="button button-block button-assertive button-large-font-size" >
+                    
                     Play Fight Song
-                </button>
+                </button>-->
+            <audio id="myTune">
+                <source src="https://booyahfightsongs.blob.core.windows.net/asset-f59ee304-58cd-4e7d-bb22-8155836398e4/Fight Songs/Penn State - Fight Song.mp3">
+              
+            </audio>
+
+            <button class="button button-large-font-size button-block button-assertive" onclick="document.getElementById('myTune').play()">Play Fight Song</button>
+           
+            <button class="button button-large-font-size button-block button-stable"onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
+
             </div>
 
     </ion-content>
