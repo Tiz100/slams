@@ -38,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/home.html',
-                        controller: 'HomeController'
+                        
                     }
                 }
             })
@@ -79,36 +79,42 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         }
     })
+        .state('app.walls', {
+            url: '/walls',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/walls.html',
+                }
+            }
+        })
+
 
     ;
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/home');
 })
 
-  .controller('HomeController', ['$scope', '$state', function ($scope, $state) {
-      $scope.navTitle = 'Home Page';
+//  .controller('HomeController', ['$scope', '$state', function ($scope, $state) {
+//      $scope.navTitle = 'Home Page';
 
-      $scope.leftButtons = [{
-          type: 'button-icon icon ion-navicon',
-          tap: function (e) {
-              $scope.toggleMenu();
-          }
-      }];
-  }])
-
-
-.controller('ChatController', ['$scope', $state, function ($scope, $state) {
-    $scope.navTitle = 'chat-rooms';
-    $scope.leftButtons = [{
-        type: 'button-icon icon ion-navicon',
-        tap: function (e) {
-            $scope.toggleMenu();
-        }
-    }];
-}]);
+//      $scope.leftButtons = [{
+//          type: 'button-icon icon ion-navicon',
+//          tap: function (e) {
+//              $scope.toggleMenu();
+//          }
+//      }];
+//  }])
 
 
-
+//.controller('ChatController', ['$scope', $state, function ($scope, $state) {
+//    $scope.navTitle = 'chat-rooms';
+//    $scope.leftButtons = [{
+//        type: 'button-icon icon ion-navicon',
+//        tap: function (e) {
+//            $scope.toggleMenu();
+//        }
+//    }];
+//}]);
 
 
 

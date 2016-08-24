@@ -1,30 +1,43 @@
 (function() {
-	'use strict';
+    'use strict';
 
-	angular
+    angular
 		.module('starter.home')
-		.controller('HomeController', HomeController);
+		.controller('HomeController',function($scope,$state){
+		    //var homemenu ={stateName : 'app.home', labelName: 'home'};
+		    //var chatmenu ={stateName : 'app.chat-rooms', labelName : 'Chat'};
+		    //var sendaslam ={stateName : 'app.sendaslam', labelName : 'sendaslam'};
+		    //var walls ={stateName : 'app.walls', labelName: 'walls'};
 
-	HomeController.$inject = [ 'homeDataService', 'externalAppsService',  '$cordovaAppRate'];
+		    //$scope.subMenus = [homemenu, chatmenu, sendaslam, walls];
+		    //$scope.activeSubMenuStateName = 'app.home';
+		    //$scope.setActiveSubMenu = function(subMenuStateName){
+		    //    return $state.go(subMenuStateName);
+		    //}
+		
+		
 
-	/* @ngInject */
-	function HomeController(menuItems, homeDataService, externalAppsService, $cordovaAppRate) {
-		var vm = angular.extend(this, {
-		    entries: menuItems,
+homeController.$inject = [ 'homeDataService',   '$cordovaAppRate'];
 
-					openFacebookPage: openFacebookPage,
-			rateThisAppNow: rateThisAppNow
-		});
+		    /* @ngInject */
+		    //function HomeController( homeDataService,  $cordovaAppRate) {
+		    //	var vm = angular.extend(this, {
+		    //	    entries: menuItems,
+
+		    //				openFacebookPage: openFacebookPage,
+		    //		rateThisAppNow: rateThisAppNow
+		    //	});
 
 		
 
 		
-		function openFacebookPage() {
-			externalAppsService.openExternalUrl(homeDataService.facebookPage);
-		}
+		    function openFacebookPage() {
+		        externalAppsService.openExternalUrl(homeDataService.facebookPage);
+		    }
 
-		function rateThisAppNow(){
-			$cordovaAppRate.promptForRating(true);
+		    function rateThisAppNow(){
+		        $cordovaAppRate.promptForRating(true);
+		    }
 		}
-	}
-})();
+   ) })
+();

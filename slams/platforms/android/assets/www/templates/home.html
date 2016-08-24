@@ -1,5 +1,5 @@
 
-     <ion-view="Home Page" title='<img class="title-image" src="http://www.booyahslams.com/images/Logov3small.png" height="44px" />' id="home" style="background-color:#283f7e">
+     <ion-view="Home Page"  title='<img class="title-image" src="http://www.booyahslams.com/images/Logov3small.png" height="44px" />' id="home" style="background-color:#283f7e">
 
          <ion-content  style="background-color:#283f7e">
 
@@ -10,17 +10,19 @@
                  <div class="item item-divider item-positive">
                  </div>
 
-             <div class="item item-text-wrap item-assertive">
+             <div   class="item item-text-wrap item-assertive" >
 
-                 <button class="button button-large-font-size button-block button-positive" onclick="location.href='/templates/chat-rooms.html'">Chat</button>
+                 <!--<button class="button button-large-font-size button-block button-positive" onclick="location.href='/templates/chat-rooms.html'">Chat</button>-->
+                 <button  class="button button-large-font-size button-block button-positive" ui-sref="app.chat-rooms" >Chat</button>
+                 <button class="button button-large-font-size button-block button-positive" ui-sref="app.sendaslam">Send a Slam</button>
+                 <button class="button button-large-font-size button-block button-positive" ui-sref="app.walls">Slamming Walls</button>
              
 
-                 <button class="button button-large-font-size button-block button-positive" onclick="location.href='templates/sendaslam.html'">Send a Slam</button>
+                 <!--<button class="button button-large-font-size button-block button-positive" onclick="location.href='templates/sendaslam.html'">Send a Slam</button>
 
-                 <button class="button button-large-font-size button-block button-positive" onclick="location.href='templates/walls.html'">Slamming Walls</button>
+                 <button class="button button-large-font-size button-block button-positive" onclick="location.href='templates/walls.html'">Slamming Walls</button>-->
 
-                 <button class="button button-large-font-size button-block button-positive" onclick="location.href='templates/aboutus.html'">About Us</button>
-                               
+                
                  
              </div >
              <div class="item item-divider item-assertive">
@@ -39,5 +41,16 @@
      </ion-view="Home">
 
 
+<!--<ion-view>
+    <ion-content>
+        <ion-list>
 
+            <ion-item ng-repeat="chat-rooms in home"
+                      href="#/app/home/{{chatid}}">
+                {{chat.title}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+</ion-view>-->
 

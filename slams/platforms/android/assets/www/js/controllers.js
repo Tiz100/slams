@@ -1,7 +1,7 @@
 angular.module('starter.controllers', ['ionic'])
 
 
-.controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function ($scope, $state, $ionicModal, $timeout) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -10,6 +10,16 @@ angular.module('starter.controllers', ['ionic'])
     //$scope.$on('$ionicView.enter', function(e) {
     //});
 
+    var homemenu = { stateName: 'app.home', labelName: 'home' };
+    var chatmenu = { stateName: 'app.chat-rooms', labelName: 'Chat' };
+    var sendaslam = { stateName: 'app.sendaslam', labelName: 'sendaslam' };
+    var walls = { stateName: 'app.walls', labelName: 'walls' };
+
+    $scope.subMenus = [homemenu, chatmenu, sendaslam, walls];
+    $scope.activeSubMenuStateName = 'app.home';
+    $scope.setActiveSubMenu = function (subMenuStateName) {
+        return $state.go(subMenuStateName);
+    }
     // Form data for the login modal
     $scope.loginData = {};
 
@@ -79,3 +89,4 @@ function stop() {
     audio.pause();
     audio.src = audio.src;
 }
+
