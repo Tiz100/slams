@@ -8,6 +8,7 @@
 
 angular.module('starter', ['ionic', 'starter.controllers'])
 
+
 .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -94,27 +95,32 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     $urlRouterProvider.otherwise('/app/home');
 })
 
-//  .controller('HomeController', ['$scope', '$state', function ($scope, $state) {
-//      $scope.navTitle = 'Home Page';
 
-//      $scope.leftButtons = [{
-//          type: 'button-icon icon ion-navicon',
-//          tap: function (e) {
-//              $scope.toggleMenu();
-//          }
-//      }];
-//  }])
+/*azure connection*/
 
+var client = new WindowsAzure.MobileServiceClient('https://booyahslamv2.azurewebsites.net')
+var table = client.getTable(Sport);
+/**
+ * Process the results that are received by a call to table.read()
+ *
+ * @param {Object} results the results as a pseudo-array
+ * @param {int} results.length the length of the results array
+ * @param {Object} results[] the individual results
+ */
+function success(results) {
+    var numItemsRead = results.length;
 
-//.controller('ChatController', ['$scope', $state, function ($scope, $state) {
-//    $scope.navTitle = 'chat-rooms';
-//    $scope.leftButtons = [{
-//        type: 'button-icon icon ion-navicon',
-//        tap: function (e) {
-//            $scope.toggleMenu();
-//        }
-//    }];
-//}]);
+    for (var i = 0 ; i < results.length ; i++) {
+        var row = results[i];
+        // Each row is an object - the properties are the columns
+    }
+}
 
+function failure(error) {
+    throw new Error('Error loading data: ', error);
+}
 
+table
+    .read()
+    .then(success, failure);
 

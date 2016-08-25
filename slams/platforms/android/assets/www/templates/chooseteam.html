@@ -7,9 +7,12 @@
             </div>
 
             <select>
-                <option>Option 1</option>
-                <option selected>Option 2</option>
-                <option>Option 3</option>
+                <option>
+                    <ion-item ng-repeat="sport.sportName">
+                         {{sport}}
+                    </ion-item>
+                </option>
+               
             </select>
         </label>
 

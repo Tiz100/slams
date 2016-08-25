@@ -73,7 +73,9 @@ it('should change state', function () {
 
     expect(value1.getText()).toContain('false');
     expect(value2.getText()).toContain('NO');
-});
+})
+
+
 
 
 /*play music controller*/
@@ -88,5 +90,5 @@ function play() {
 function stop() {
     audio.pause();
     audio.src = audio.src;
-}
+};
 
