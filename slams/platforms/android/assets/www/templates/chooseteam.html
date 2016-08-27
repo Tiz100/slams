@@ -1,5 +1,6 @@
-﻿<<ion-view view-title="Choose Your Team">
-    <ion-content>
+﻿<ion-view view-title="Choose Your Team">
+    <ion-content      ng-controller="sportCtrl as vm" >
+                 
     
         <label class="item item-input item-select item-positive">
             <div class="input-label">
@@ -8,9 +9,7 @@
 
             <select>
                 <option>
-                    <ion-item ng-repeat="sport.sportName">
-                         {{sport}}
-                    </ion-item>
+                   {{vm.sport}}  
                 </option>
                
             </select>
@@ -22,9 +21,8 @@
             </div>
 
             <select>
-                <option>Option 1</option>
-                <option selected>Option 2</option>
-                <option>Option 3</option>
+                <option>{{vm.sport}}  </option>
+               
             </select>
         </label>
 
@@ -44,6 +42,7 @@
         </div>
 
         <!--add button to submit team choice to dadtabase-->
+
         <div class="submit-team">
             <button class="button button-large-font-size button-block button-assertive">
                 BOOYAH
@@ -58,7 +57,7 @@
             </div>
 
             <div class="item item-body">
-                <img class="full-image" src="http://www.booyahslams.com/images/Logov3small.png">
+                <img class="full-image" src="https://booyahfightsongs.blob.core.windows.net/asset-f59ee304-58cd-4e7d-bb22-8155836398e4/logo/Logocrop.png">
 
             </div>
 
@@ -70,7 +69,7 @@
                     Play Fight Song
                 </button>-->
             <audio id="myTune">
-                <source src="https://booyahfightsongs.blob.core.windows.net/asset-f59ee304-58cd-4e7d-bb22-8155836398e4/Fight Songs/Penn State - Fight Song.mp3">
+                <source src="https://open.spotify.com/album/39WI8tjY7vH68xrNiDKNly">
               
             </audio>
 

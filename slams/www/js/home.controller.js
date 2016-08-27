@@ -1,43 +1,40 @@
-(function() {
-    'use strict';
+//(function () {
+//    'use strict';
 
-    angular
-		.module('starter.home')
-		.controller('HomeController',function($scope,$state){
-		    //var homemenu ={stateName : 'app.home', labelName: 'home'};
-		    //var chatmenu ={stateName : 'app.chat-rooms', labelName : 'Chat'};
-		    //var sendaslam ={stateName : 'app.sendaslam', labelName : 'sendaslam'};
-		    //var walls ={stateName : 'app.walls', labelName: 'walls'};
+//    angular
+//		.module('starter')
+//		.controller('HomeController', function ($scope, $state) {
 
-		    //$scope.subMenus = [homemenu, chatmenu, sendaslam, walls];
-		    //$scope.activeSubMenuStateName = 'app.home';
-		    //$scope.setActiveSubMenu = function(subMenuStateName){
-		    //    return $state.go(subMenuStateName);
-		    //}
-		
-		
 
-homeController.$inject = [ 'homeDataService',   '$cordovaAppRate'];
 
-		    /* @ngInject */
-		    //function HomeController( homeDataService,  $cordovaAppRate) {
-		    //	var vm = angular.extend(this, {
-		    //	    entries: menuItems,
+//		    HomeController.$inject = ['homeDataService', '$cordovaAppRate'];
 
-		    //				openFacebookPage: openFacebookPage,
-		    //		rateThisAppNow: rateThisAppNow
-		    //	});
+//		    /* @ngInject */
+//		    function HomeController(homeDataService, $cordovaAppRate,  externalAppsService) {
+//		        var vm = angular.extend(this, {
+//                    openFacebookPage: openFacebookPage,
+//		            openTwitterpage: openTwiterpage,
+//		            openInstagrampage: openInstagrampage,
+//		            rateThisAppNow: rateThisAppNow
+//		        });
 
-		
 
-		
-		    function openFacebookPage() {
-		        externalAppsService.openExternalUrl(homeDataService.facebookPage);
-		    }
 
-		    function rateThisAppNow(){
-		        $cordovaAppRate.promptForRating(true);
-		    }
-		}
-   ) })
-();
+
+//		        function openFacebookPage() {
+//		            externalAppsService.openExternalUrl(homeDataService.facebookPage);
+//		        }
+
+//		        function rateThisAppNow() {
+//		            $cordovaAppRate.promptForRating(true);
+//		        }
+
+//		        function openTwitterpage() {
+//		            externalAppsService.openExternalUrl(homeDataService.TwitterPage);
+//		        }
+
+//		        ;
+//		    }
+//		}
+//                )
+//});

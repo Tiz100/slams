@@ -27,6 +27,9 @@
         },
         "cordova-plugin-ms-azure-mobile-apps": {
             "PACKAGE_NAME": "io.cordova.myappa61586"
+        },
+        "com.lampa.startapp": {
+            "PACKAGE_NAME": "223a15dd"
         }
     },
     "dependent_plugins": {

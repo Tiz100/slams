@@ -9,9 +9,17 @@
     <form ng-submit="doLogin()" ng-controller="tcController">
       <div class="list">
         <label class="item item-input">
-          <span class="input-label">Username</span>
+          <span class="input-label">Choose your Booyah User Name</span>
           <input type="text" ng-model="loginData.username">
         </label>
+
+          <br></br>
+
+          <p> I Agree to the <a href="http://dcmdevserv.info/Booyah_slam/"> Booyah Slams Terms and conditions   </a>  </p>
+          <br></br>
+
+          <input type="checkbox" ng-model="checkboxModel.value2">
+
           <label class="item item-input">
               <span class="input-label">Email</span>
               <input type="text" ng-model="loginData.email">
@@ -23,11 +31,7 @@
         </label>
         
              
-                  <br></br>
-         
-                  <p> I Agree to the <a href="http://dcmdevserv.info/Booyah_slam/"> Booyah Slams Terms and conditions   </a>  </p>
-                  
-                  <input type="checkbox" ng-model="checkboxModel.value2">
+              
             
               
            

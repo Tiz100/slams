@@ -55,6 +55,13 @@ module.exports = [
         "clobbers": [
             "WindowsAzure"
         ]
+    },
+    {
+        "file": "plugins/com.lampa.startapp/www/startApp.js",
+        "id": "com.lampa.startapp.startapp",
+        "merges": [
+            "startApp"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -68,7 +75,8 @@ module.exports.metadata =
     "ionic-plugin-keyboard": "2.2.1",
     "cordova-plugin-inappbrowser": "1.4.0",
     "cordova-sqlite-storage": "1.4.6",
-    "cordova-plugin-ms-azure-mobile-apps": "2.0.0-rc1"
+    "cordova-plugin-ms-azure-mobile-apps": "2.0.0-rc1",
+    "com.lampa.startapp": "0.1.4"
 };
 // BOTTOM OF METADATA
 });

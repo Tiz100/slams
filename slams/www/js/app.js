@@ -39,7 +39,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/home.html',
-                        
+
                     }
                 }
             })
@@ -94,33 +94,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/home');
 })
-
-
-/*azure connection*/
-
-var client = new WindowsAzure.MobileServiceClient('https://booyahslamv2.azurewebsites.net')
-var table = client.getTable(Sport);
-/**
- * Process the results that are received by a call to table.read()
- *
- * @param {Object} results the results as a pseudo-array
- * @param {int} results.length the length of the results array
- * @param {Object} results[] the individual results
- */
-function success(results) {
-    var numItemsRead = results.length;
-
-    for (var i = 0 ; i < results.length ; i++) {
-        var row = results[i];
-        // Each row is an object - the properties are the columns
-    }
-}
-
-function failure(error) {
-    throw new Error('Error loading data: ', error);
-}
-
-table
-    .read()
-    .then(success, failure);
+;
 
